@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Events</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #111;
+      color: #f4d07d;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?event,party') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: url('https://source.unsplash.com/800x600/?celebration,lights') no-repeat center center/cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    .section h2 {
+      color: #ffe082;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery-images img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      background-color: #c59d5f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #a77d3a;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .footer-links a {
+      color: #f4d07d;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #f4d07d;
+    }
+
+    iframe {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RS Events</h1>
+  <p>Since 2016 – Crafting Memorable Celebrations</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+  <h2>Welcome to RS Events</h2>
+  <p>Your Vision, Our Planning – Unforgettable Memories Begin Here</p>
+</section>
+
+<section id="about" class="section">
+  <h2>Our Story</h2>
+  <p>Founded in 2016, RS Events brings creativity and care to every event. From weddings to corporate events, we specialize in creating beautiful, meaningful, and stress-free celebrations tailored to your vision.</p>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <p>We offer full event planning, décor, coordination, vendor management, and more for weddings, birthdays, engagements, baby showers, and business events. We also offer catering and food services to delight your guests with delicious menus tailored to your occasion. Our food offerings include a wide variety of <strong>pure vegetarian dishes</strong> crafted to satisfy all taste preferences. From traditional thalis to modern vegetarian fusion, our food service ensures every bite is a delight. Featured specialties include:
+    <ul>
+      <li><strong>Dal Baffle</strong></li>
+      <li><strong>Laddoos</strong></li>
+      <li><strong>Paneer Tikka</strong></li>
+    </ul>
+  </p>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Event Gallery</h2>
+  <div class="gallery-images">
+    <img src="https://source.unsplash.com/400x300/?wedding,party" alt="Event 1">
+    <img src="https://source.unsplash.com/400x300/?birthday,event" alt="Event 2">
+    <img src="https://source.unsplash.com/400x300/?catering,food" alt="Event 3">
+    <img src="https://source.unsplash.com/400x300/?event,celebration" alt="Event 4">
+    <img src="images/b2dcc171-b965-4614-b8da-2704ba47a5f7.jpg" alt="Uploaded Event Image 1">
+    <img src="images/944952d7-31ab-45b9-bc36-b9280d545f2c.jpg" alt="Uploaded Event Image 2">
+    <img src="images/ca8323dd-8c27-42e2-b89d-c404a8e8633b.jpg" alt="Uploaded Event Image 3">
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p><em>Let’s bring your event to life. Share your details and we’ll be in touch with a personalized quote.</em></p>
+  <form class="contact-form">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="event">Event Type</label>
+    <select id="event" name="event">
+      <option>Wedding</option>
+      <option>Birthday</option>
+      <option>Corporate</option>
+      <option>Other</option>
+    </select>
+
+    <label for="date">Event Date</label>
+    <input type="date" id="date" name="date">
+
+    <label for="message">Tell us about your event</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Get a Quote</button>
+  </form>
+
+  <div style="margin-top: 30px; font-size: 1rem;">
+    <p><strong>Call us:</strong> +91-971323223, +91-87754699</p>
+    <p><strong>Email:</strong> kamleshvishwapremi538@gmail.com</p>
+    <p><strong>Address:</strong> 20 Bagpura, Sawer Road, Ujjain, MP, India</p>
+  </div>
+
+  <iframe src="https://www.google.com/maps?q=20+Bagpura,+Sawer+Road,+Ujjain,+MP,+India&output=embed" allowfullscreen></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 RS Events. All rights reserved.</p>
+  <p>📍 20 Bagpura, Sawer Road, Ujjain, MP, India | 📞 +91-971323223, +91-87754699 | ✉️ kamleshvishwapremi538@gmail.com</p>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank">🔵 Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
+    <a href="https://wa.me/91971323223" target="_blank">💬 WhatsApp</a>
+  </div>
+</footer>
+
+</body>
+</html>
